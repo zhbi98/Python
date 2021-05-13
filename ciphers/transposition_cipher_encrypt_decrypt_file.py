@@ -1,8 +1,11 @@
-import time, os, sys
-import transposition_cipher as transCipher
+import os
+import sys
+import time
+
+from . import transposition_cipher as transCipher
 
 
-def main():
+def main() -> None:
     inputFile = "Prehistoric Men.txt"
     outputFile = "Output.txt"
     key = int(input("Enter key: "))
